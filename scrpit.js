@@ -18,7 +18,7 @@ function display(num){
                 screen.value += num
             }
             else{
-                if(num=='.'){
+                if(num=='.' && lastCharacter!='.'){
                     screen.value += "."
                 }
                 
@@ -33,7 +33,7 @@ function display(num){
 var getResult = ()=>{
 
     var statement = screen.value
-    if(statement) screen.value = eval(statement)=='NaN'? 'error' : eval(statement)
+    if(statement) screen.value = (eval(statement)==NaN ? 'error' : eval(statement))
     
 }
 
