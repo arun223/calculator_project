@@ -19,7 +19,7 @@ function display(num){
             }
             else{
                 if(num=='.'){
-                    screen.value = "."
+                    screen.value += "."
                 }
                 
             }
